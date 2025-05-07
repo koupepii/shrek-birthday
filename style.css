@@ -1,25 +1,25 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Comfortaa', cursive;
-  background: url('ФОН-КАРТИНКА.jpg') no-repeat center center fixed;
+  font-family: 'Comfortaa', sans-serif;
+  background-image: url('shrek_background.jpg'); /* пока заглушка — потом вставим реальную картинку */
   background-size: cover;
-  color: white;
-  text-align: center;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
-  font-size: 3em;
-  margin-top: 40vh;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  display: inline-block;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s;
 }
 
 .title:hover {
   transform: scale(1.1);
-  background: rgba(0, 0, 0, 0.6);
 }
