@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Викторина для Димы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="quiz-title">🎈 Викторина про День Рождения 🎈</h1>
+
+  <div class="question-block">
+    <p>1. Какой сегодня день?</p>
+    <button onclick="checkAnswer(this, true)">3 июня</button>
+    <button onclick="checkAnswer(this, false)">1 апреля</button>
+    <button onclick="checkAnswer(this, false)">25 декабря</button>
+  </div>
+
+  <div class="question-block">
+    <p>2. Кто тебя любит больше всех?</p>
+    <button onclick="checkAnswer(this, true)">Катя ❤️</button>
+    <button onclick="checkAnswer(this, false)">Осёл 🫏</button>
+    <button onclick="checkAnswer(this, false)">GitHub</button>
+  </div>
+
+  <div id="cake" onclick="playCakeSound()">🎂 Нажми на торт 🎂</div>
+  <audio id="cakeSound" src="cake.mp3"></audio>
+
+  <p class="final-text">3 июня 2025 год. Люблю тебя. — Катя 💚</p>
+
+  <script>
+    function checkAnswer(btn, correct) {
+      btn.style.backgroundColor = correct ? 'lightgreen' : 'salmon';
+    }
+
+    function playCakeSound() {
+      document.getElementById('cakeSound').play();
+    }
+  </script>
+</body>
+</html>
