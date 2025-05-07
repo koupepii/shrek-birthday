@@ -23,3 +23,22 @@ body {
 .title:hover {
   transform: scale(1.1);
 }
+#donkey {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: donkey-animation 3s infinite;
+}
+
+@keyframes donkey-animation {
+  0% {
+    bottom: -100px;
+  }
+  50% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: -100px;
+  }
+}
