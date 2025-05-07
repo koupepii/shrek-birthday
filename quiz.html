@@ -39,6 +39,16 @@
   </script>
 </body>
   <img id="cake" src="cake.gif" alt="Торт" onclick="showGift()"/>
+  <script>
+  function showGift() {
+    const giftText = document.createElement('div');
+    giftText.innerHTML = '🎁 Подарки от Димы: Новый ноутбук, Ожерелье для Кати!';
+    giftText.style.fontSize = '20px';
+    giftText.style.marginTop = '20px';
+    giftText.style.color = '#ff6347';
+    document.body.appendChild(giftText);
+  }
+</script>
 </html>
 <img id="donkey" src="donkey.gif" alt="Осёл" onclick="donkeyTalk()" />
 <script>
